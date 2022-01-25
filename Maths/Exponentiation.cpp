@@ -50,7 +50,10 @@ int SieveOfEratosthenes(int num)
         }
 }
 
-
+//using fermat little theorm
+// took MOD-1 because we wanted a^r and for that we needed to
+// express b^c as q(p-1)+r so that a^b^c becomes a^r using fermat little theorm
+// b^c %(p-1)= r
 int power(int a , int b, int MOD)
 {
     if (b == 0) return 1;
